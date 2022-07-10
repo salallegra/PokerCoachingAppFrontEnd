@@ -1,5 +1,10 @@
+import Landing from "./pages/Landing";
 function App() {
-  return <div>Poker Coaching</div>;
+  return (
+    <div>
+      <Landing />
+    </div>
+  );
 }
 
 export default App;
