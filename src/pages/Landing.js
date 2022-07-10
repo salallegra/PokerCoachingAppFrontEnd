@@ -1,12 +1,13 @@
-import logo from "../assets/images/logo.png";
 import main from "../assets/images/main.png";
 import styled from "styled-components";
+import Logo from "../components/Logo";
+import { Link } from "react-router-dom";
 
 const Landing = () => {
   return (
     <Wrapper>
       <nav>
-        <img src={logo} alt="Poker Coaching Logo" className="logo" />
+        <Logo />
       </nav>
       <div className="container page">
         <div className="info">
@@ -14,7 +15,9 @@ const Landing = () => {
             Poker <span>Coaching</span> App
           </h1>
           <p>Get hand reviews from a professional coach</p>
-          <button className="btn btn-hero">Login/Register</button>
+          <Link to="/register" className="btn btn-hero">
+            Login/Register
+          </Link>
         </div>
 
         <img src={main} alt="Blah" className="img main-img"></img>
