@@ -1,9 +1,8 @@
 import img from "../assets/images/not-found.svg";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Wrapper from "../assets/wrappers/ErrorPage";
 
-const Landing = () => {
+const Error = () => {
   return (
     <Wrapper className="full-page">
       <div>
@@ -16,4 +15,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Error;
