@@ -19,7 +19,9 @@ export const registerUser = createAsyncThunk(
       const resp = await customFetch.post("/users/register", user);
       console.log(resp);
     } catch (error) {
-      console.log(error.response);
+      console.log("Registration Error ", error.message);
+      toast.error("Registration Error ", error.message);
+      //console.log(error.response.data.message);
     }
     //  return registerUserThunk('/auth/register', user, thunkAPI);
   }
